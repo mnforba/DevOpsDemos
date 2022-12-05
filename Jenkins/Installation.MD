@@ -49,7 +49,7 @@ OpenJDK 64-Bit Server VM (Red_Hat-11.0.16.0.8-1.amzn2.0.1) (build 11.0.16+8-LTS,
 You can install jenkins using the rpm or by setting up the repo. We will setup the repo so that we can update it easily in future.
 Get latest version of jenkins from https://pkg.jenkins.io/redhat-stable/
 ```sh
-yum -y install wget
+yum -y install wget git unzip
 wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 yum -y install jenkins
