@@ -37,23 +37,12 @@ export PATH=$JAVA_HOME/bin:$PATH
 # To set it permanently update your .bash_profile
 source /etc/profile
 ```
-### Confirm Java Version
-Lets install java and set the java home
-```sh
-java -version
-find /usr/lib/jvm/java-1.8* | head -n 3 
-#JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
-export JAVA_HOME
-PATH=$PATH:$JAVA_HOME
-# To set it permanently update your .bash_profile
-source ~/.bash_profile
-```
 _The output should be something like this,_
 ```
 [root@~]# java -version
-openjdk version "1.8.0_151"
-OpenJDK Runtime Environment (build 1.8.0_151-b12)
-OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
+openjdk version "11.0.16" 2022-07-19 LTS
+OpenJDK Runtime Environment (Red_Hat-11.0.16.0.8-1.amzn2.0.1) (build 11.0.16+8-LTS)
+OpenJDK 64-Bit Server VM (Red_Hat-11.0.16.0.8-1.amzn2.0.1) (build 11.0.16+8-LTS, mixed mode, sharing)
 ```
 
 ## Install Jenkins
